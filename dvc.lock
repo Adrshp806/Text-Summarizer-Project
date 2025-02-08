@@ -1,0 +1,13 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/textSummarizer/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 9bb4473dd7a3d48cefcf1b309a90e28f
+      size: 1079
+    - path: src/textSummarizer/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: e3212281760af24f6d5cf713c3a18a1f
+      size: 532
